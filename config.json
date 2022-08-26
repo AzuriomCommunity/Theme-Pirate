@@ -1,0 +1,32 @@
+{
+    "discord": "625774284823986183",
+    "twitter": "Azuriom",
+    "home_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat quam mi, sit amet tincidunt urna volutpat vitae. Aenean pellentesque, ligula sed semper egestas, tellus sapien venenatis velit, cursus rutrum sem sapien non massa.",
+    "icon_1": "bi bi-shield-shaded",
+    "icon_2": "bi bi-speedometer2",
+    "icon_3": "bi bi-people",
+    "title_1": "Safety",
+    "title_2": "Power",
+    "title_3": "Team",
+    "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat quam mi, sit amet tincidunt urna volutpat vitae. Aenean pellentesque, ligula sed semper egestas, tellus sapien venenatis velit, cursus rutrum sem sapien non massa.",
+    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat quam mi, sit amet tincidunt urna volutpat vitae. Aenean pellentesque, ligula sed semper egestas, tellus sapien venenatis velit, cursus rutrum sem sapien non massa.",
+    "description_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat quam mi, sit amet tincidunt urna volutpat vitae. Aenean pellentesque, ligula sed semper egestas, tellus sapien venenatis velit, cursus rutrum sem sapien non massa.",
+    "footer_title_1": "About us",
+    "footer_title_2": "Learn more",
+    "footer_description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat quam mi, sit amet tincidunt urna volutpat vitae. Aenean pellentesque, ligula sed semper egestas, tellus sapien venenatis velit, cursus rutrum sem sapien non massa.",
+    "footer_description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat quam mi, sit amet tincidunt urna volutpat vitae. Aenean pellentesque, ligula sed semper egestas, tellus sapien venenatis velit, cursus rutrum sem sapien non massa.",
+    "footer_links": [
+        {
+            "name": "Support",
+            "value": "https://azuriom.com"
+        },
+        {
+            "name": "FAQ",
+            "value": "https://azuriom.com"
+        },
+        {
+            "name": "Shop",
+            "value": "https://azuriom.com"
+        }
+    ]
+}
