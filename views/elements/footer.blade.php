@@ -1,4 +1,4 @@
-<div class="footer-1 py-5">
+<div class="bg-body py-5">
     <div class="container">
         <div class="row gy-3">
             <div class="col-md-4 d-flex align-items-center">
@@ -24,18 +24,16 @@
     </div>
 </div>
 
-<div class="footer-2 py-3">
+<div class="copyright py-3">
     <div class="container">
         <div class="row gy-3 mt-1">
-            <div class="col-md-3 d-flex text-center text-center text-md-start">
-                <div>
-                    @foreach(theme_config('footer_links') ?? [] as $link)
-                        <a class="me-2 footer-link" href="{{ $link['value'] }}">{{ $link['name'] }}</a>
-                    @endforeach
-                </div>
+            <div class="col-md-3 d-md-flex justify-content-between text-uppercase">
+                @foreach(theme_config('footer_links') ?? [] as $link)
+                    <a class="me-2 d-inline-block" href="{{ $link['value'] }}">{{ $link['name'] }}</a>
+                @endforeach
             </div>
             <div class="col-md-6 text-center">
-                <p class="h6 mb-0">{{ setting('copyright') }}</p>
+                <p class="mb-0">{{ setting('copyright') }}</p>
                 <small>@lang('messages.copyright') @lang('theme::pirate.credits')</small>
             </div>
             <div class="col-md-3 d-flex justify-content-center justify-content-md-end">

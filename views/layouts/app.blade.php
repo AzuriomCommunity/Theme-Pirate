@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('app')
-    <header class="header">
+    <header class="header overflow-x-hidden">
         @include('elements.navbar')
 
         <div class="d-flex justify-content-center pt-3 pb-5">

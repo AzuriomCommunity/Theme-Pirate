@@ -3,11 +3,11 @@
 @section('title', trans('messages.home'))
 
 @section('app')
-    <header class="header home-header">
+    <header class="header home-header min-vh-100">
         @include('elements.navbar')
 
-        <div class="container">
-            <div class="row gy-4 home-banner-section">
+        <div class="container position-relative z-2">
+            <div class="row gy-4 pt-5">
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
                     <div class="text-center">
                         <h1 class="text-uppercase">{{ site_name() }}</h1>
@@ -42,45 +42,47 @@
 
     <main class="content home">
         <div class="container">
-            <h2 class="text-center mb-4">
+            <h2 class="text-uppercase text-center mb-4">
                 <span class="home-title">{{ trans('messages.news') }}</span>
             </h2>
 
-            <div id="news" class="carousel slide mb-5 mx-auto" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    @foreach($posts as $id => $post)
-                        <div class="carousel-item @if($id === 0) active @endif">
-                            <div class="card">
-                                @if($post->hasImage())
-                                    <img src="{{ $post->imageUrl() }}" class="card-img-top" alt="{{ $post->title }}">
-                                @endif
-                                <div class="card-body">
-                                    <h3>
-                                        <a href="{{ route('posts.show', $post) }}">
-                                            {{ $post->title }}
+            <div class="col-md-10 px-3 mx-auto">
+                <div id="news" class="carousel slide mb-5 mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach($posts as $id => $post)
+                            <div class="carousel-item @if($id === 0) active @endif">
+                                <div class="card">
+                                    @if($post->hasImage())
+                                        <img src="{{ $post->imageUrl() }}" class="card-img-top" alt="{{ $post->title }}">
+                                    @endif
+                                    <div class="card-body">
+                                        <h3>
+                                            <a href="{{ route('posts.show', $post) }}">
+                                                {{ $post->title }}
+                                            </a>
+                                        </h3>
+
+                                        <p>{{ format_date($post->published_at) }}</p>
+
+                                        <a class="btn btn-primary" href="{{ route('posts.show', $post) }}">
+                                            {{ trans('messages.posts.read') }}
                                         </a>
-                                    </h3>
-
-                                    <p>{{ format_date($post->published_at) }}</p>
-
-                                    <a class="btn btn-primary" href="{{ route('posts.show', $post) }}">
-                                        {{ trans('messages.posts.read') }}
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                    <button class="carousel-control-prev d-md-block d-none" type="button" data-bs-target="#news" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next d-md-block d-none" type="button" data-bs-target="#news" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev d-md-block d-none" type="button" data-bs-target="#news" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next d-md-block d-none" type="button" data-bs-target="#news" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
 
             @if(! $servers->isEmpty())
-                <h2 class="text-center mb-4">
+                <h2 class="text-uppercase text-center mb-4">
                     <span class="home-title">{{ trans('messages.servers') }}</span>
                 </h2>
 
@@ -132,47 +134,53 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="d-flex flex-md-row flex-column">
-                        <div class="flex-shrink-0 feature-parent mb-3">
-                            <div class="feature mx-auto">
+                        <div class="flex-shrink-0 py-3 mx-3 mb-3">
+                            <div class="feature fs-1 text-primary mx-auto rounded">
                                 <i class="{{ theme_config('icon_1') }}"></i>
                             </div>
                         </div>
 
                         <div class="flex-grow-1 ms-3">
-                            <h2>{{ theme_config('title_1') }}</h2>
+                            <h2 class="text-primary text-uppercase">
+                                {{ theme_config('title_1') }}
+                            </h2>
                             <p>{{ theme_config('description_1') }}</p>
                         </div>
                     </div>
 
                     <div class="d-flex flex-md-row flex-column-reverse">
                         <div class="flex-grow-1 me-3">
-                            <h2 class="text-md-end">{{ theme_config('title_2') }}</h2>
+                            <h2  class="text-primary text-uppercase text-md-end">
+                                {{ theme_config('title_2') }}
+                            </h2>
                             <p>{{ theme_config('description_2') }}</p>
                         </div>
 
-                        <div class="flex-shrink-0 feature-parent mb-3">
-                            <div class="feature mx-auto">
+                        <div class="flex-shrink-0 py-3 mx-3 mb-3">
+                            <div class="feature fs-1 text-primary mx-auto rounded">
                                 <i class="{{ theme_config('icon_2') }}"></i>
                             </div>
                         </div>
                     </div>
 
                     <div class="d-flex flex-md-row flex-column">
-                        <div class="flex-shrink-0 feature-parent mb-3">
-                            <div class="feature mx-auto">
+                        <div class="flex-shrink-0 py-3 mx-3 mb-3">
+                            <div class="feature fs-1 text-primary mx-auto rounded">
                                 <i class="{{ theme_config('icon_3') }}"></i>
                             </div>
                         </div>
 
                         <div class="flex-grow-1 ms-3">
-                            <h2>{{ theme_config('title_3') }}</h2>
+                            <h2 class="text-primary text-uppercase">
+                                {{ theme_config('title_3') }}
+                            </h2>
                             <p>{{ theme_config('description_3') }}</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <iframe src="https://discord.com/widget?id=810782144804683826&theme=dark" class="w-100 mb-3" height="500"></iframe>
+                    <iframe src="https://discord.com/widget?id={{ theme_config('discord_id') }}&theme=dark" class="w-100 mb-3 rounded" height="500"></iframe>
 
                     <a data-theme="dark" data-height="500" class="twitter-timeline" href="https://twitter.com/{{ theme_config('twitter') }}">Tweets</a>
                 </div>

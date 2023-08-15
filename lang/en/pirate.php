@@ -18,5 +18,5 @@ return [
     'footer_description_1' => 'Footer description 1',
     'footer_description_2' => 'Footer description 2',
     'footer_links' => 'Footer links',
-    'credits' => 'Theme by <a href="https://justzak.fr" target="_blank" rel="noopener">JustZak</a> & <a href="https://github.com/Sloyni" target="_blank" rel="noopener">Sloyni</a>.',
+    'credits' => 'Theme by JustZak & Sloyni.',
 ];

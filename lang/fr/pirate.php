@@ -18,5 +18,5 @@ return [
     'footer_description_1' => 'Description 1 du footer',
     'footer_description_2' => 'Description 2 du footer',
     'footer_links' => 'Liens du footer',
-    'credits' => 'Thème réalisé par <a href="https://justzak.fr" target="_blank" rel="noopener">JustZak</a> & <a href="https://github.com/Sloyni" target="_blank" rel="noopener">Sloyni</a>.',
+    'credits' => 'Thème réalisé par >JustZak & Sloyni.',
 ];

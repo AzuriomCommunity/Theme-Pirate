@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="@yield('description', setting('description', ''))">
-    <meta name="theme-color" content="#3490DC">
+    <meta name="theme-color" content="#fdb800">
     <meta name="author" content="Azuriom">
 
     <meta property="og:title" content="@yield('title')">
@@ -41,8 +41,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/base.css') }}" rel="stylesheet">
     <link href="{{ theme_asset('css/style.css') }}" rel="stylesheet">
     @stack('styles')
+    @include('elements.theme-color', ['color' => '#fdb800'])
     <style>
         :root {
             --background-url: url('{{ setting('background') ? image_url(setting('background')) : 'https://via.placeholder.com/2000x500' }}')
@@ -50,7 +52,7 @@
     </style>
 </head>
 
-<body>
+<body data-bs-theme="dark">
 @yield('app')
 
 <footer>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark pt-3">
+<nav class="navbar navbar-expand-md z-3 pt-3">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             @if(setting('logo'))
