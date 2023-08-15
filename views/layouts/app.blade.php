@@ -1,12 +1,12 @@
 @extends('layouts.base')
 
 @section('app')
-    <header class="header overflow-x-hidden">
+    <header class="header overflow-hidden">
         @include('elements.navbar')
 
         <div class="d-flex justify-content-center pt-3 pb-5">
             <div class="position-relative header-logo">
-                <img src="{{ site_logo() }}" class="img-fluid d-block mx-auto" width="300" alt="{{ site_name() }}">
+                <img src="{{ site_logo() }}" class="img-fluid d-block mx-auto logo" alt="{{ site_name() }}">
             </div>
         </div>
 

@@ -83,6 +83,10 @@ a {
     z-index: 0;
 }
 
+.header .logo {
+    max-height: 175px;
+}
+
 .header-separator {
     position: relative;
     margin-top: 175px;

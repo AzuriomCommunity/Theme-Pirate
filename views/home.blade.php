@@ -3,7 +3,7 @@
 @section('title', trans('messages.home'))
 
 @section('app')
-    <header class="header home-header min-vh-100">
+    <header class="header home-header min-vh-100 overflow-hidden">
         @include('elements.navbar')
 
         <div class="container position-relative z-2">
