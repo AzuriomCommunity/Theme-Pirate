@@ -1,5 +1,5 @@
 <div class="header-separator">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 175.2" class="svg-1" fill="#1d6fa6">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 175.2" class="svg-1" fill="#1d6fa6" preserveAspectRatio="none">
         <path d="M0-1.7l64,8.5c64,8.5,192,25.4,320,28.2c128,2.7,256-8.4,384-5.7c128,2.8,256,19.8,384,18.4
                     c128-1.5,256-21.1,384-28.2c128-7.2,256-1.3,320,1.4l64,2.8l10.1,149.8H-10.1L0-1.7z"/>
         <path opacity="0.66" d="M0,7.7L64,12c64,4.2,192,12.7,320,12.7s256-8.5,384-7.1c128,1.5,256,12.6,384,11.3
@@ -8,7 +8,7 @@
 
     <img src="{{ theme_asset('svg/boat.svg') }}" class="boat d-md-block d-none" alt="Boat">
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 175.2" class="svg-2" fill="#1d5b90">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 175.2" class="svg-2" fill="#1d5b90" preserveAspectRatio="none">
         <path d="M0-1.7l64,8.5c64,8.5,192,25.4,320,28.2c128,2.7,256-8.4,384-5.7c128,2.8,256,19.8,384,18.4
                     c128-1.5,256-21.1,384-28.2c128-7.2,256-1.3,320,1.4l64,2.8l10.1,149.8H-10.1L0-1.7z"/>
         <path opacity="0.66" d="M0,7.7L64,12c64,4.2,192,12.7,320,12.7s256-8.5,384-7.1c128,1.5,256,12.6,384,11.3
